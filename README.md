@@ -137,6 +137,9 @@ see [Code of Conduct](CODE-OF-CONDUCT.md)
 See [Demo Video](RhombusAi_DataInferandConvert.mp4) to see how the app is used.
 
 ## Tests
+### Ensure you have the necessary packages for testing:
+npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom
+
 
 ## Deployment
 Publishing a project that consists of a React frontend and a Django backend involves several steps, including preparing both parts for production and choosing hosting services for deployment. Here's a general overview of the process:
