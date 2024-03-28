@@ -20,7 +20,7 @@ def load_data(file_path,file_type,chunksize=None):
         """
     # Determine the file type and load data accordingly
     # use chunks for large datasets
-    file_path.seek(0)
+    # file_path.seek(0)
 
     if file_type == 'csv':
         if chunksize:
