@@ -129,9 +129,9 @@ This project is created with:
   - [Git](https://git-scm.com/): A distributed version-control system for tracking changes in source code during software development.
 
 ## Contributing
-
 I am not open to contributions. 
-### Code of Conduct:
+### Code of Conduct: 
+see [Code of Conduct](CODE-OF-CONDUCT.md)
 
 
 ## Screenshots / Demo
