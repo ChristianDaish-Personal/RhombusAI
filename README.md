@@ -133,7 +133,6 @@ I am not open to contributions.
 ### Code of Conduct: 
 see [Code of Conduct](CODE-OF-CONDUCT.md)
 
-
 ## Screenshots / Demo
 
 
