@@ -143,6 +143,25 @@ See [Demo Video](RhombusAi_DataInferandConvert.mp4) to see how the app is used.
 ### Ensure you have the necessary packages for testing:
 npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom
 
+#### It is assumed that you have already cloned the repository ####
+Step 1. Navigate to your project's root directory where the manage.py file is located.
+
+Step 2. Activate your virtual environment (if you havent already). If you're using venv, activate it with:
+
+Windows:
+.\venv\Scripts\activate
+
+
+macOS/Linux:
+source venv/bin/activate
+
+Step 3. Run Your Tests. Execute your Django project's tests by running:
+
+python3 manage.py test
+
+This command will discover and run tests written in tests.py files across your Django app(s).
+
+### Note that a continuous integration workflow has been included in the github repository and performs the automated testing whenever push, pull or build is performed. ###
 
 ## Deployment
 Publishing a project that consists of a React frontend and a Django backend involves several steps, including preparing both parts for production and choosing hosting services for deployment. Here's a general overview of the process:
