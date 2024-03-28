@@ -134,18 +134,45 @@ I am not open to contributions.
 see [Code of Conduct](CODE-OF-CONDUCT.md)
 
 ## Screenshots / Demo
-
-
-## Documentation
+See [Demo Video](RhombusAi_DataInferandConvert.mp4) to see how the app is used.
 
 ## Tests
 
 ## Deployment
+Publishing a project that consists of a React frontend and a Django backend involves several steps, including preparing both parts for production and choosing hosting services for deployment. Here's a general overview of the process:
+### 1. Prepare the React Frontend for Production
+Build Your React App: Run the npm run build command in your React project directory. This command creates a build directory with a production build of your app.
+### 2. Prepare the Django Backend for Production
+Settings: Adjust your Django settings.py for production. This includes setting DEBUG to False, configuring a proper database, setting up ALLOWED_HOSTS, and configuring static and media files handling.
+Static Files: Collect static files by running python manage.py collectstatic. Ensure your static files settings are correctly configured.
+Dependencies: Make sure all dependencies are ready for production and remove any development-only packages.
+### 3. Choose Hosting Services
+Frontend Hosting: Popular choices for hosting React apps include Netlify, Vercel, and Amazon S3 with CloudFront. These services offer easy deployment processes for static sites.
+
+Backend Hosting: For Django, options include traditional cloud providers like AWS EC2, Heroku, DigitalOcean, and Google Cloud Platform. Consider using a service like Heroku for ease of use, or AWS/DigitalOcean for more control.
+
+### 4. Deploy the React Frontend
+Netlify/Vercel: For services like Netlify or Vercel, you can simply drag and drop your build folder or connect your GitHub repository and follow the prompts to deploy your React app.
+AWS S3 and CloudFront: If using AWS, create an S3 bucket for your React app, enable static website hosting, and upload your build directory. Optionally, use CloudFront for CDN distribution.
+### 5. Deploy the Django Backend
+Heroku: Deploying to Heroku can be as simple as linking your GitHub repository to a Heroku app and setting config vars for your environment. Use the Heroku Postgres addon for your database. Deploy using git push heroku main.
+AWS EC2/DigitalOcean Droplets: For more control, you can set up a virtual server on AWS EC2 or DigitalOcean. This process involves setting up the server environment, deploying your code, and configuring a web server like Nginx with a WSGI server like Gunicorn.
+### 6. Domain Name and SSL
+DNS: Configure your domain name to point to your hosting services. Both your frontend and backend can have separate subdomains (e.g., www.example.com for frontend and api.example.com for backend).
+SSL: Ensure your hosting service provides SSL certificates. Heroku, Netlify, and Vercel offer this as part of their service. For custom setups, consider Let’s Encrypt for a free certificate.
+### 7. Environment Variables and Secrets
+Make sure to configure environment variables and secrets in your hosting service rather than hardcoding them in your application.
+### 8. Testing
+Test your application thoroughly in the production environment to ensure everything works as expected, especially functionalities like database interactions, API calls, and static files serving.
+### 9. Continuous Deployment (Optional)
+Consider setting up continuous deployment from your version control system for easy updates in the future.
 
 ## Authors and Acknowledgment
-
-## License
+### Authors
+Authored by [Christian Daish]([https://](https://www.linkedin.com/in/christiandaish/)
+### Acknowledgements
+Hat tip to anyone whose code was used
 
 ## Contact Information
+[email](christian.daish@gmail.com)
 
-## Contact Information
