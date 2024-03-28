@@ -32,6 +32,5 @@ jobs:
     # Run Django tests
     - name: Test with pytest
       run: |
-        cd rhombusdataProject
         python manage.py test
   
