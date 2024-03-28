@@ -21,6 +21,7 @@ To set up and and run the application, from GitHub, involves several steps. Thes
 First, clone the GitHub repository to your local machine. Open a terminal and run:
 
 git clone https://github.com/ChristianDaish-Personal/RhombusAI.git
+
 cd RhombusAI
 
 ### Step 2: Set Up the Backend (Django)
@@ -32,9 +33,11 @@ python3 -m venv venv
 
 **2.2. Activate the Virtual Environment:**
 - On macOS/Linux:
+  
   source venv/bin/activate
   
 - On Windows (Command Prompt):
+  
   venv\Scripts\activate.bat
   
 **2.3. Install Dependencies:**
